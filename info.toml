@@ -406,7 +406,8 @@ path = "exercises/enums/enums2.rs"
 mode = "compile"
 hint = """
 You can create enumerations that have different variants with different types
-such as no data, anonymous structs, a single string, tuples, ...etc"""
+such as no data, anonymous structs, a single string, tuples, ...etc
+Have a look in The Book, to find out more: https://doc.rust-lang.org/stable/book/ch06-01-defining-an-enum.html"""
 
 [[exercises]]
 name = "enums3"
@@ -416,7 +417,8 @@ hint = """
 As a first step, you can define enums to compile this code without errors.
 and then create a match expression in `process()`.
 Note that you need to deconstruct some message variants
-in the match expression to get value in the variant."""
+in the match expression to get value in the variant.
+Have a look in The Book, to find out more: https://doc.rust-lang.org/stable/book/ch06-02-match.html#patterns-that-bind-to-values"""
 
 # STRINGS
 
@@ -429,8 +431,9 @@ The `current_favorite_color` function is currently returning a string slice with
 lifetime. We know this because the data of the string lives in our code itself -- it doesn't
 come from a file or user input or another program -- so it will live as long as our program
 lives. But it is still a string slice. There's one way to create a `String` by converting a
-string slice covered in the Strings chapter of the book, and another way that uses the `From`
-trait."""
+string slice, and another way that uses the `From` trait.
+These two methods are covered in the Strings chapter of The Book:
+https://doc.rust-lang.org/stable/book/ch08-02-strings.html#creating-a-new-string"""
 
 [[exercises]]
 name = "strings2"
@@ -438,7 +441,7 @@ path = "exercises/strings/strings2.rs"
 mode = "compile"
 hint = """
 Yes, it would be really easy to fix this by just changing the value bound to `word` to be a
-string slice instead of a `String`, wouldn't it?? There is a way to add one character to line
+string slice instead of a `String`, wouldn't it? There is a way to add one character to line
 9, though, that will coerce the `String` into a string slice."""
 
 [[exercises]]
@@ -449,8 +452,8 @@ hint = """
 There's tons of useful standard library functions for strings. Let's try and use some of
 them: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim>!
 
-For the compose_me method: You can either use the `format!` macro, or convert the string
-slice into an owned string, which you can then freely extend."""
+For the compose_me method: You can either use the `format!` macro (https://doc.rust-lang.org/std/macro.format.html),
+or convert the string slice into an owned string, which you can then freely extend."""
 
 [[exercises]]
 name = "strings4"
@@ -477,7 +480,8 @@ hint = """
 The delicious_snacks module is trying to present an external interface that is
 different than its internal structure (the `fruits` and `veggies` modules and
 associated constants). Complete the `use` statements to fit the uses in main and
-find the one keyword missing for both constants."""
+find the one keyword missing for both constants. Have a look in The Book, to find out more: 
+https://doc.rust-lang.org/stable/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
 
 [[exercises]]
 name = "modules3"
@@ -486,7 +490,8 @@ mode = "compile"
 hint = """
 UNIX_EPOCH and SystemTime are declared in the std::time module. Add a use statement
 for these two to bring them into scope. You can use nested paths or the glob
-operator to bring these two in using only one line."""
+operator to bring these two in using only one line. Have a look in The Book, to find out more: 
+https://doc.rust-lang.org/stable/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#using-nested-paths-to-clean-up-large-use-lists"""
 
 # HASHMAPS
 
@@ -499,6 +504,8 @@ Hint 1: Take a look at the return type of the function to figure out
   the type for the `basket`.
 Hint 2: Number of fruits should be at least 5. And you have to put
   at least three different types of fruits.
+Hint 3: Check The Book for a intro on how to use HashMaps:
+  https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#creating-a-new-hash-map
 """
 
 [[exercises]]
